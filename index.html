@@ -3,165 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кривощекова Полина — Резюме</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #fff;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 { margin-bottom: 5px; }
-        .tagline {
-            color: #666;
-            font-size: 1.1em;
-            margin-top: 0;
-        }
-        h2 {
-            border-bottom: 2px solid #eaeaea;
-            padding-bottom: 10px;
-            margin-top: 40px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .skills-group {
-            margin-bottom: 20px;
-        }
-        .skills-group h3 {
-            margin-bottom: 5px;
-            font-size: 1.1em;
-        }
-        .project {
-            margin-bottom: 30px;
-            padding: 15px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-        .project h3 {
-            margin-top: 0;
-        }
-        .links a {
-            display: inline-block;
-            margin-right: 15px;
-            margin-top: 10px;
-            padding: 8px 16px;
-            background-color: #24292e;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-size: 0.9em;
-        }
-        .links a:hover {
-            background-color: #444;
-        }
-        .contact a {
-            color: #0366d6;
-        }
-        footer {
-            text-align: center;
-            margin-top: 60px;
-            font-size: 0.9em;
-            color: #888;
-        }
-    </style>
+    <title>Краеведческий музей</title>
+
+    <!-- Шрифт Montserrat: разные толщины и наклон -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="header">
-        <!-- Замените ссылку на свою фотографию -->
-        <img src="avatar.jpg" alt="Фото профиля">
-        <h1>Кривощекова Полина Андреевна</h1>
-        <p class="tagline">Студент направления «Программное обеспечение автоматизированных систем".</p>
+    <div class="page">
+
+        <!-- ШАПКА -->
+        <header class="header">
+            <div class="logoRow">
+                <img class="logo" src="img/logo.png" alt="Логотип музея">
+                <div class="line"></div>
+                <h1>Краеведческий музей</h1>
+            </div>
+
+            <nav class="nav">
+                <button class="nav-btn active" data-tab="home">Главная</button>
+                <button class="nav-btn" data-tab="history">История</button>
+                <button class="nav-btn" data-tab="gallery">Галерея</button>
+                <button class="nav-btn" data-tab="contacts">Контакты</button>
+            </nav>
+        </header>
+
+        <!-- ОСНОВНОЙ КОНТЕНТ -->
+        <main class="main">
+
+            <!-- ГЛАВНАЯ -->
+            <section id="home" class="tab-content active">
+                <h2>Музей, созданный целой деревней — для людей</h2>
+
+                <img class="mainPic" src="img/main.jpg" alt="Краеведческий музей">
+
+                <div class="linksBlock">
+                    <a href="#" class="link">Память поколений</a>
+                    <a href="#" class="link">Душа Сибири</a>
+                    <a href="#" class="link">Единство народа</a>
+                </div>
+
+                <p class="mainText">
+                    Тут вещи жителей деревни нескольких поколений, тут душа сибирского человека
+                    и единство русского народа. Приезжайте к нам — вас встретит интересная экскурсия
+                    по краеведческому музею и тепло сибирской души.
+                </p>
+            </section>
+
+            <!-- ИСТОРИЯ -->
+            <section id="history" class="tab-content">
+                <h2 class="leftTitle">История создания музея</h2>
+
+                <ol class="facts">
+                    <li>Идея возникла в 1999 году. Инициатором стала Зоя Александровна Кривощёкова.</li>
+                    <li>Она начала со сбора материалов о героях-земляках — участниках Великой Отечественной войны: изучала архивы, общалась с ветеранами и их родственниками.</li>
+                    <li>Позже эти наработки легли в основу книги «Мы этой памяти верны».</li>
+                    <li>В 1970-х годах в местной школе уже существовал музей, основанный Виталием Фёдоровичем Стрельцовым, но экспонаты тогда пропали — коллекцию пришлось воссоздавать практически с нуля.</li>
+                    <li>Большую помощь оказали старожилы села: передавали семейные реликвии — предметы быта, вышивки, старинные платки, полотенца, элементы крестьянского обихода (хлебную лопату, ухваты, кочергу).</li>
+                    <li>В музее удалось воссоздать уголок старинной русской избы.</li>
+                    <li>Отдельно представлены работы современных мастериц: вышитые картины, аппликации, вязаные изделия, работы из «бросовых» материалов. Музей открыли в 2003 году.</li>
+                </ol>
+            </section>
+
+            <!-- ГАЛЕРЕЯ -->
+            <section id="gallery" class="tab-content">
+                <h2 class="leftTitle">Галерея</h2>
+
+                <div class="gallery">
+                    <img src="img/photo_1.jpg" alt="Фото 1">
+                    <img src="img/photo_2.jpg" alt="Фото 2">
+                    <img src="img/photo_3.jpg" alt="Фото 3">
+                    <img src="img/photo_4.jpg" alt="Фото 4">
+                </div>
+            </section>
+
+            <!-- КОНТАКТЫ -->
+            <section id="contacts" class="tab-content">
+                <h2 class="leftTitle">Контакты</h2>
+
+                <div class="contactsInfo">
+                    <p><strong>Кривощекова Полина</strong> — внучка основательницы музея</p>
+                    <p><strong>Телефон:</strong> 8 912 345 39 44</p>
+                    <p><strong>Группа:</strong> ИВТ-23-1</p>
+                </div>
+
+                <h2 class="contactSubtitle">Связь с основателем сайта</h2>
+
+                <form class="contactForm" onsubmit="event.preventDefault()">
+                    <input class="field" type="text" name="name" placeholder="Имя">
+                    <textarea class="field textarea" name="message" placeholder="Комментарий"></textarea>
+                    <button class="sendBtn" type="submit">Отправить</button>
+                </form>
+            </section>
+
+        </main>
+
+        <!-- ПОДВАЛ -->
+        <footer class="footer">
+            <div class="footerLine"></div>
+            <div class="footerInfo">
+                <span>Кривощекова Полина</span>
+                <span>ИВТ-23-1</span>
+                <span>2026</span>
+            </div>
+        </footer>
+
     </div>
 
-    <section id="skills">
-        <h2>Навыки</h2>
-        <div class="skills-group">
-            <h3>Языки программирования</h3>
-            <ul>
-                <li>Visual Prolog</li>
-                <li>Python (базовый уровень)</li>
-                <li>HTML/CSS</li>
-            </ul>
-        </div>
-        <div class="skills-group">
-            <h3>Инструменты</h3>
-            <ul>
-                <li>Git & GitHub</li>
-                <li>Microsoft Project</li>
-                <li>Visual Studio Code</li>
-            </ul>
-        </div>
-        <div class="skills-group">
-            <h3>Методологии</h3>
-            <ul>
-                <li>Управление проектами (PMBOK)</li>
-                <li>Гибкие методологии (Agile, Scrum)</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="education">
-        <h2>Образование</h2>
-        <p><strong>Уральский государственный экономический университет (УрГЭУ)</strong></p>
-        <p>Направление: 09.03.01 Информатика и вычислительная техника (ИВТ)</p>
-        <p>Курс: 3</p>
-    </section>
-
-    <section id="projects">
-        <h2>Проекты</h2>
-
-       <div class="project">
-            <h3>Создание адаптивного сайта (Visual Prolog)</h3>
-            <p><strong>Цель:</strong> оздать сацт на свободную тему, состоящий из нескольких страниц и адаптирующийся под разные устройства</p>
-            <p><strong>Стек:</strong> HTML</p>
-            <p><strong>Результат:</strong> ZIP-папка со всеми материалы для работы сайта.</p>
-            <div class="links">
-                <!-- Ссылка на код в вашем репозитории -->
-                <a href="https://disk.yandex.ru/d/66gzpUVVdkj3eA" target="_blank">Посмотреть папку</a>
-            </div>
-        </div>
-        
-
-        <div class="project">
-            <h3>Концепция проекта «Подготовка и проведение свадеб»</h3>
-            <p><strong>Цель:</strong> Разработать концепцию коммерческого проекта свадебного агентства.</p>
-            <p><strong>Стек:</strong> Microsoft Project, Управление проектами</p>
-            <p><strong>Результат:</strong> Создан документ с описанием целей, задач, ресурсов, бюджета и рисков проекта.</p>
-            <div class="links">
-                <!-- Ссылка на PDF-отчёт, если он есть -->
-                <a href="ЛР№1_УПП_ИВТ-23-1_КривощековаПА.pdf" target="_blank">Скачать отчёт (PDF)</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="contacts">
-        <h2>Контакты</h2>
-        <p class="contact">Email: <a href="mailto:ваш.email@example.com">ваш.email@example.com</a></p>
-        <p class="contact">Telegram: <a href="https://t.me/ваш_ник" target="_blank">@ваш_ник</a></p>
-        <p class="contact">GitHub: <a href="https://github.com/ваш-ник" target="_blank">ваш-ник</a></p>
-    </section>
-
-    <footer>
-        <p>© 2026 Кривощекова П.А. Создано с помощью GitHub Pages.</p>
-    </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
