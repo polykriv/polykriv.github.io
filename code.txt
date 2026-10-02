@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Краеведческий музей</title>
+
+    <!-- Шрифт Montserrat: разные толщины и наклон -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page">
+
+        <!-- ШАПКА -->
+        <header class="header">
+            <div class="logoRow">
+                <img class="logo" src="img/logo.png" alt="Логотип музея">
+                <div class="line"></div>
+                <h1>Краеведческий музей</h1>
+            </div>
+
+            <nav class="nav">
+                <button class="nav-btn active" data-tab="home">Главная</button>
+                <button class="nav-btn" data-tab="history">История</button>
+                <button class="nav-btn" data-tab="gallery">Галерея</button>
+                <button class="nav-btn" data-tab="contacts">Контакты</button>
+            </nav>
+        </header>
+
+        <!-- ОСНОВНОЙ КОНТЕНТ -->
+        <main class="main">
+
+            <!-- ГЛАВНАЯ -->
+            <section id="home" class="tab-content active">
+                <h2>Музей, созданный целой деревней — для людей</h2>
+
+                <img class="mainPic" src="img/main.jpg" alt="Краеведческий музей">
+
+                <div class="linksBlock">
+                    <a href="#" class="link">Память поколений</a>
+                    <a href="#" class="link">Душа Сибири</a>
+                    <a href="#" class="link">Единство народа</a>
+                </div>
+
+                <p class="mainText">
+                    Тут вещи жителей деревни нескольких поколений, тут душа сибирского человека
+                    и единство русского народа. Приезжайте к нам — вас встретит интересная экскурсия
+                    по краеведческому музею и тепло сибирской души.
+                </p>
+            </section>
+
+            <!-- ИСТОРИЯ -->
+            <section id="history" class="tab-content">
+                <h2 class="leftTitle">История создания музея</h2>
+
+                <ol class="facts">
+                    <li>Идея возникла в 1999 году. Инициатором стала Зоя Александровна Кривощёкова.</li>
+                    <li>Она начала со сбора материалов о героях-земляках — участниках Великой Отечественной войны: изучала архивы, общалась с ветеранами и их родственниками.</li>
+                    <li>Позже эти наработки легли в основу книги «Мы этой памяти верны».</li>
+                    <li>В 1970-х годах в местной школе уже существовал музей, основанный Виталием Фёдоровичем Стрельцовым, но экспонаты тогда пропали — коллекцию пришлось воссоздавать практически с нуля.</li>
+                    <li>Большую помощь оказали старожилы села: передавали семейные реликвии — предметы быта, вышивки, старинные платки, полотенца, элементы крестьянского обихода (хлебную лопату, ухваты, кочергу).</li>
+                    <li>В музее удалось воссоздать уголок старинной русской избы.</li>
+                    <li>Отдельно представлены работы современных мастериц: вышитые картины, аппликации, вязаные изделия, работы из «бросовых» материалов. Музей открыли в 2003 году.</li>
+                </ol>
+            </section>
+
+            <!-- ГАЛЕРЕЯ -->
+            <section id="gallery" class="tab-content">
+                <h2 class="leftTitle">Галерея</h2>
+
+                <div class="gallery">
+                    <img src="img/photo_1.jpg" alt="Фото 1">
+                    <img src="img/photo_2.jpg" alt="Фото 2">
+                    <img src="img/photo_3.jpg" alt="Фото 3">
+                    <img src="img/photo_4.jpg" alt="Фото 4">
+                </div>
+            </section>
+
+            <!-- КОНТАКТЫ -->
+            <section id="contacts" class="tab-content">
+                <h2 class="leftTitle">Контакты</h2>
+
+                <div class="contactsInfo">
+                    <p><strong>Кривощекова Полина</strong> — внучка основательницы музея</p>
+                    <p><strong>Телефон:</strong> 8 912 345 39 44</p>
+                    <p><strong>Группа:</strong> ИВТ-23-1</p>
+                </div>
+
+                <h2 class="contactSubtitle">Связь с основателем сайта</h2>
+
+                <form class="contactForm" onsubmit="event.preventDefault()">
+                    <input class="field" type="text" name="name" placeholder="Имя">
+                    <textarea class="field textarea" name="message" placeholder="Комментарий"></textarea>
+                    <button class="sendBtn" type="submit">Отправить</button>
+                </form>
+            </section>
+
+        </main>
+
+        <!-- ПОДВАЛ -->
+        <footer class="footer">
+            <div class="footerLine"></div>
+            <div class="footerInfo">
+                <span>Кривощекова Полина</span>
+                <span>ИВТ-23-1</span>
+                <span>2026</span>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
